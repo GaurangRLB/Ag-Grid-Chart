@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#myGrid {
+    flex: 2;
+}
+
+#myChart {
+    flex: 3;
+    min-height: 455px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Distributes cards evenly */
+    flex-wrap: wrap; /* Ensures cards wrap if the screen is too small */
+  }
+  
+  mat-card {
+    width: 30%; /* Adjust width to fit 3 cards in a row */
+    margin: 10px; /* Add some spacing between the cards */
+  }
+  .card-header {
+    background-color: transparent; /* You can replace 'blue' with any specific shade like #007BFF */
+    color: Black; /* Ensures text is readable on a blue background */
+    padding: 10px;
+  }
+
+  .card-content {
+    background-color: transparent; /* You can replace 'blue' with any specific shade like #007BFF */
+    color: #00245D; /* Ensures text is readable on a blue background */
+    font-weight: bold;
+    font-size: 12;
+    padding-top: 22px !important;
+  }
